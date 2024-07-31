@@ -21,8 +21,8 @@ echo "$content" | sudo tee /etc/apt/sources.list >/dev/null
 sudo apt update
 sudo apt upgrade
 sudo apt install -y \
-  libffi-dev libx11-dev libxinerama-dev autoconf \
-  automake build-essential git-core libass-dev libfreetype6-dev \
+  libffi-dev libx11-dev libxinerama-dev autoconf libfreetype-dev \
+  automake build-essential git-core libass-dev \
   libgnutls28-dev libmp3lame-dev libsdl2-dev libtool libva-dev \
   libvdpau-dev libvorbis-dev libxcb1-dev libxcb-shm0-dev libxcb-xfixes0-dev meson \
   ninja-build pkg-config texinfo wget yasm zlib1g-dev libunistring-dev libaom-dev libdav1d-dev \
@@ -33,6 +33,7 @@ sudo apt install -y \
   ibus ibus-pinyin ibus-unikey ibus-kkc \
   flameshot \
   clang
+# libfreetype6-dev \
 
 echo 'eval "$(mise activate bash)"' >>~/.bashrc
 mise up
