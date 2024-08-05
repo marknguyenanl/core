@@ -49,6 +49,8 @@ run_scan "$HOME/.config/mise/config.toml" "$HOME/mydotfile/installsh/plugins/mis
 
 run_scan "/usr/bin/nvim" "$(mise which nvim)"
 
+run_scan "/usr/bin/clock" "$(mise which clock)"
+
 run_scan "/usr/bin/node" "$(mise which node)"
 
 run_scan "/usr/bin/kubectl" "$(mise which kubectl)"
