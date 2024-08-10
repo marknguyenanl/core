@@ -17,9 +17,8 @@ echo "$content" | sudo tee /etc/apt/sources.list >/dev/null
 
 sudo apt update
 sudo apt upgrade
-sudo apt install -y
-
-libffi-dev libx11-dev libxinerama-dev autoconf \
+sudo apt install -y \
+  libffi-dev libx11-dev libxinerama-dev autoconf \
   automake build-essential git libass-dev libfreetype-dev \
   libgnutls28-dev libmp3lame-dev libsdl2-dev libtool libva-dev \
   libvdpau-dev libvorbis-dev libxcb1-dev libxcb-shm0-dev libxcb-xfixes0-dev meson \
@@ -35,3 +34,65 @@ libffi-dev libx11-dev libxinerama-dev autoconf \
 
 echo 'eval "$(mise activate bash)"' >>~/.bashrc
 mise up
+
+miseSetting="[tools]
+node = '20.9'
+bun = 'latest'
+yarn = 'latest'
+
+neovim = 'ref:master'
+git = '2.45.2'
+github-cli = 'latest'
+lazygit = 'latest'
+lua = '5.4.6'
+luajit = 'latest'
+
+dotnet = 'latest'
+go = 'latest'
+python = '3.11'
+rust = 'latest'
+ruby = '3.1.0'
+
+dockle = 'latest'
+helm = 'latest'
+kubectl = '1.28.10'
+kubectx = 'latest'
+kubent = 'latest'
+kubelogin = 'latest'
+kind = 'latest'
+minikube = 'latest'
+argo = 'latest'
+argocd = '2.10.6'
+azure-cli = 'latest'
+terraform = 'latest'
+
+ripgrep = 'latest'
+fd = 'latest'
+tree-sitter = 'latest'
+glab = 'latest'
+
+'npm:degit' = 'latest'
+'npm:joplin' = 'latest'
+'pipx:neovim-sh' = '0.1.2'
+
+[settings]
+legacy_version_file = true
+always_keep_download = false
+always_keep_install = false
+plugin_autoupdate_last_check_duration = '1 week'
+trusted_config_paths = ['$HOME/.config/mise/config.toml']
+verbose = false
+asdf_compat = true
+http_timeout = 60
+jobs = 20
+raw = false
+yes = true
+not_found_auto_install = true
+task_output = 'prefix'
+paranoid = false
+disable_default_shorthands = false
+experimental = true
+status = { missing_tools = 'if_other_versions_installed', show_env = false, show_tools = false }"
+
+mkdir -p $HOME/.config/mise/
+echo "$miseSetting" >$HOME/.config/mise/config.toml

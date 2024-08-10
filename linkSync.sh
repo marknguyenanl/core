@@ -45,7 +45,7 @@ run_scan "/usr/bin/python3" "$(mise which python3)"
 run_scan "$HOME/.config/nvim" "$HOME/mydotfile/.config/nvim"
 
 mkdir -p "$HOME/.config/mise"
-run_scan "$HOME/.config/mise/config.toml" "$HOME/mydotfile/installsh/plugins/mise/conf.toml"
+run_scan "$HOME/.config/mise/config.toml" "$HOME/core/mise-config.toml"
 
 run_scan "/usr/bin/nvim" "$(mise which nvim)"
 
