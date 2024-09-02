@@ -4,11 +4,10 @@ bun = 'latest'
 yarn = 'latest'
 
 neovim = 'ref:master'
-git = 'latest'
+gitui = 'latest'
 github-cli = '2.52.0'
 lazygit = 'latest'
 lua = 'latest'
-luajit = 'latest'
 
 dotnet = 'latest'
 go = 'latest'
@@ -39,7 +38,6 @@ deno = "latest"
 
 'npm:degit' = 'latest'
 'npm:joplin' = 'latest'
-'cargo:clock-cli' = 'latest'
 
 [tasks.cleancache]
 alias = "c"

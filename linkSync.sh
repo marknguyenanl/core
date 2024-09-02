@@ -34,13 +34,15 @@ if [ ! -d "$HOME/mydotfile" ]; then
   su -c "git clone https://github.com/marknguyenanl/mydotfile $HOME/mydotfile" $user
 fi
 
+mkdir -p "$HOME/.config/fish"
 run_scan "$HOME/.config/fish/config.fish" "$HOME/mydotfile/installsh/plugins/fish/config.fish"
-
-run_scan "/usr/bin/git" "$(mise which git)"
 
 run_scan "/usr/bin/gh" "$(mise which gh)"
 
 run_scan "/usr/bin/python3" "$(mise which python3)"
+
+mkdir -p "$HOME/.config/gitui"
+run_scan "$HOME/.config/gitui/key_bindings.ron" "$HOME/mydotfile/installsh/plugins/gitui/key_bindings.ron"
 
 run_scan "$HOME/.config/nvim" "$HOME/mydotfile/.config/nvim"
 
@@ -48,8 +50,6 @@ mkdir -p "$HOME/.config/mise"
 run_scan "$HOME/.config/mise/config.toml" "$HOME/core/mise-config.toml"
 
 run_scan "/usr/bin/nvim" "$(mise which nvim)"
-
-run_scan "/usr/bin/clock" "$(mise which clock)"
 
 run_scan "$HOME/.Xmodmap" "$HOME/mydotfile/installsh/plugins/remapping/.Xmodmap"
 
