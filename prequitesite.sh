@@ -42,8 +42,8 @@ yarn = 'latest'
 
 neovim = 'ref:master'
 git = 'latest'
+gitui = 'latest'
 github-cli = '2.52.0'
-lazygit = 'latest'
 lua = 'latest'
 luajit = 'latest'
 

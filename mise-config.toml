@@ -7,7 +7,6 @@ neovim = 'ref:master'
 git = 'latest'
 gitui = 'latest'
 github-cli = '2.52.0'
-lazygit = 'latest'
 lua = 'latest'
 luajit = 'latest'
 
@@ -40,7 +39,6 @@ deno = "latest"
 
 'npm:degit' = 'latest'
 'npm:joplin' = 'latest'
-'cargo:clock-cli' = 'latest'
 
 [tasks.cleancache]
 alias = "c"
