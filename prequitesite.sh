@@ -42,7 +42,7 @@ sudo apt install -y mise
 
 
 miseSetting="[tools]
-node = "18.18.0"
+node = '18.18.0'
 bun = 'latest'
 yarn = 'latest'
 
@@ -55,7 +55,7 @@ luajit = 'latest'
 
 dotnet = 'latest'
 go = 'latest'
-python = "3.12.4"
+python = '3.12.4'
 rust = 'latest'
 ruby = '3.1.0'
 
@@ -69,7 +69,7 @@ kops = 'latest'
 kind = 'latest'
 minikube = 'latest'
 argo = 'latest'
-argocd = "2.11.7"
+argocd = '2.11.7'
 azure-cli = 'latest'
 terraform = 'latest'
 
@@ -77,7 +77,7 @@ ripgrep = 'latest'
 fd = 'latest'
 tree-sitter = 'latest'
 glab = 'latest'
-starship = "latest"
+starship = 'latest'
 deno = "latest"
 
 'npm:degit' = 'latest'
@@ -85,18 +85,18 @@ deno = "latest"
 'cargo:clock-cli' = 'latest'
 
 [tasks.cleancache]
-alias = "c"
-run = "rm -rf .cache"
+alias = 'c'
+run = 'rm -rf .cache'
 hide = false
 [tasks.update]
 depends = ["cleancache"]
-alias = "u"
-run = "mise up"
+alias = 'u'
+run = 'mise up'
 hide = false
 
 # [env]
-# _.python.venv = "~/venv"
-# _.python.venv = { path = "{{env.HOME}}/venv", create = true }
+# _.python.venv = '~/venv'
+# _.python.venv = { path = '{{env.HOME}}/venv', create = true }
 
 [settings]
 legacy_version_file = false
