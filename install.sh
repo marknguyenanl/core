@@ -6,7 +6,5 @@ iPlugin() {
   done
 }
 
-mkdir -p $HOME/joplin-server/newNotes
-
 iPlugin \
-  fish docker calcurse flatpak nvimTmpRam
+  fish docker calcurse flatpak nvimTmpRam joplin-client auto-cpufreq dwm st gitui

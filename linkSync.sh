@@ -63,5 +63,3 @@ run_scan "/usr/bin/joplin" "$(mise which joplin)"
 mkdir -p "$HOME/.config/joplin"
 run_scan "$HOME/.config/joplin/keymap.json" "$HOME/mydotfile/installsh/plugins/joplin/keymap.json"
 run_scan "$HOME/.config/joplin/settings.json" "$HOME/mydotfile/installsh/plugins/joplin/settings.json"
-
-run_scan "/usr/share/fonts" "$HOME/mydotfile/fonts"
