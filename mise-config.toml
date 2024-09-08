@@ -45,8 +45,13 @@ deno = "latest"
 alias = "c"
 run = "rm -rf .cache"
 hide = false
+[tasks.pipup]
+alias = "p"
+run = "pip install --upgrade pip && pip install pygobject"
+hide = false
+
 [tasks.update]
-depends = ["cleancache"]
+depends = ["cleancache", "pipup"]
 alias = "u"
 run = "mise up"
 hide = false
