@@ -17,7 +17,7 @@ echo "$content" | sudo tee /etc/apt/sources.list >/dev/null
 
 sudo apt update
 sudo apt upgrade
-sudo apt install -y \
+sudo apt install \
   libffi-dev libx11-dev libxinerama-dev autoconf \
   automake build-essential git libass-dev libfreetype-dev \
   libgnutls28-dev libmp3lame-dev libsdl2-dev libtool libva-dev \
@@ -30,7 +30,8 @@ sudo apt install -y \
   ibus ibus-pinyin ibus-unikey ibus-kkc \
   flameshot \
   clang \
-  rsync
+  gcc \
+  rsync -y
 
 echo 'eval "$(mise activate bash)"' >>~/.bashrc
 mise up

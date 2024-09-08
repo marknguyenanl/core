@@ -8,7 +8,6 @@ git = 'latest'
 gitui = 'latest'
 github-cli = '2.52.0'
 lua = 'latest'
-luajit = 'latest'
 
 dotnet = 'latest'
 go = 'latest'
@@ -39,6 +38,9 @@ deno = "latest"
 
 'npm:degit' = 'latest'
 'npm:joplin' = 'latest'
+
+# [plugins]
+# git = 'https://gitlab.com/jcaigitlab/asdf-git'
 
 [tasks.cleancache]
 alias = "c"
