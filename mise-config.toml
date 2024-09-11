@@ -1,11 +1,11 @@
 [tools]
-node = "18.18.0"
 bun = 'latest'
 yarn = 'latest'
 
 neovim = 'ref:master'
+git = 'latest'
 gitui = 'latest'
-github-cli = '2.52.0'
+github-cli = 'latest'
 lua = 'latest'
 
 dotnet = 'latest'
@@ -35,9 +35,9 @@ glab = 'latest'
 starship = "latest"
 deno = "latest"
 
-'npm:degit' = 'latest'
-'npm:joplin' = 'latest'
-
+"npm:degit" = 'latest'
+"npm:joplin" = 'latest'
+node = "22.8.0"
 # [plugins]
 # git = 'https://gitlab.com/jcaigitlab/asdf-git'
 
@@ -61,7 +61,7 @@ hide = false
 # _.python.venv = { path = "{{env.HOME}}/venv", create = true }
 
 [settings]
-legacy_version_file = false
+legacy_version_file = true
 always_keep_download = false
 always_keep_install = false
 plugin_autoupdate_last_check_duration = '1 week'
