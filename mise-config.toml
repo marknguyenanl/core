@@ -1,12 +1,16 @@
 [tools]
+node = "18.18.0"
 bun = 'latest'
 yarn = 'latest'
 
 neovim = 'ref:master'
 git = 'latest'
+lazygit = 'latest'
+gitconfig = 'latest'
 gitui = 'latest'
 github-cli = 'latest'
 lua = 'latest'
+zig = 'latest'
 
 dotnet = 'latest'
 go = 'latest'
@@ -34,10 +38,8 @@ tree-sitter = 'latest'
 glab = 'latest'
 starship = "latest"
 deno = "latest"
-
-"npm:degit" = 'latest'
-"npm:joplin" = 'latest'
-node = "22.8.0"
+"npm:degit" = "2.8.4"
+"npm:joplin" = "3.0.1"
 # [plugins]
 # git = 'https://gitlab.com/jcaigitlab/asdf-git'
 
@@ -51,9 +53,12 @@ run = "pip install --upgrade pip && pip install pygobject"
 hide = false
 
 [tasks.update]
-depends = ["cleancache", "pipup"]
-alias = "u"
 run = "mise up"
+hide = false
+[tasks.addon]
+depends = ["cleancache", "update", "pipup"]
+alias = "a"
+run = "mise use -g npm:degit@latest && mise use -g npm:joplin@latest"
 hide = false
 
 # [env]
