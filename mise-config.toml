@@ -1,20 +1,17 @@
 [tools]
-node = "18.18.0"
+node = '18.18.0'
 bun = 'latest'
 yarn = 'latest'
 
 neovim = 'ref:master'
 git = 'latest'
-lazygit = 'latest'
-gitconfig = 'latest'
 gitui = 'latest'
-github-cli = 'latest'
+github-cli = '2.52.0'
 lua = 'latest'
-zig = 'latest'
+luajit = 'latest'
 
 dotnet = 'latest'
 go = 'latest'
-python = "3.12.4"
 rust = 'latest'
 ruby = '3.1.0'
 
@@ -24,12 +21,11 @@ kubectl = '1.28.10'
 kubie = 'latest'
 kustomize = ' latest'
 kubelogin = 'latest'
-kubespy = 'latest'
 kops = 'latest'
 kind = 'latest'
 minikube = 'latest'
 argo = 'latest'
-argocd = "2.11.7"
+argocd = '2.11.7'
 azure-cli = 'latest'
 terraform = 'latest'
 
@@ -37,37 +33,31 @@ ripgrep = 'latest'
 fd = 'latest'
 tree-sitter = 'latest'
 glab = 'latest'
-starship = "latest"
-deno = "latest"
-"npm:degit" = "2.8.4"
-"npm:joplin" = "3.0.1"
-# [plugins]
-# git = 'https://gitlab.com/jcaigitlab/asdf-git'
+starship = 'latest'
+deno = 'latest'
+
+'npm:degit' = 'latest'
+'npm:joplin' = 'latest'
+'cargo:clock-cli' = 'latest'
+zig = "0.13.0"
+python = "3.12.6"
 
 [tasks.cleancache]
-alias = "c"
-run = "rm -rf .cache"
+alias = 'c'
+run = 'rm -rf .cache'
 hide = false
-[tasks.pipup]
-alias = "p"
-run = "pip install --upgrade pip && pip install pygobject"
-hide = false
-
 [tasks.update]
-run = "mise up"
-hide = false
-[tasks.addon]
-depends = ["cleancache", "update", "pipup"]
-alias = "a"
-run = "mise use -g npm:degit@latest && mise use -g npm:joplin@latest"
+depends = ['cleancache']
+alias = 'u'
+run = 'mise up'
 hide = false
 
 # [env]
-# _.python.venv = "~/venv"
-# _.python.venv = { path = "{{env.HOME}}/venv", create = true }
+# _.python.venv = '~/venv'
+# _.python.venv = { path = '{{env.HOME}}/venv', create = true }
 
 [settings]
-legacy_version_file = true
+legacy_version_file = false
 always_keep_download = false
 always_keep_install = false
 plugin_autoupdate_last_check_duration = '1 week'
