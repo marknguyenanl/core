@@ -10,6 +10,9 @@ groups $user
 content="deb http://mirror.bizflycloud.vn/debian/ trixie contrib main non-free non-free-firmware
 deb-src http://mirror.bizflycloud.vn/debian/ trixie contrib main non-free non-free-firmware
 
+deb http://mirror.bizflycloud.vn/debian/ bookworm contrib main non-free non-free-firmware
+deb-src http://mirror.bizflycloud.vn/debian/ bookworm contrib main non-free non-free-firmware
+
 deb http://mirror.bizflycloud.vn/debian/ trixie-updates contrib main non-free non-free-firmware
 deb-src http://mirror.bizflycloud.vn/debian/ trixie-updates contrib main non-free non-free-firmware"
 
