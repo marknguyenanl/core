@@ -40,6 +40,7 @@ run_scan "$HOME/.config/fish/config.fish" "$HOME/mydotfile/installsh/plugins/fis
 run_scan "/usr/bin/gh" "$(mise which gh)"
 
 run_scan "/usr/bin/python3" "$(mise which python3)"
+run_scan "/usr/bin/python" "$(mise which python)"
 
 mkdir -p "$HOME/.config/gitui"
 run_scan "$HOME/.config/gitui/key_bindings.ron" "$HOME/mydotfile/installsh/plugins/gitui/key_bindings.ron"
