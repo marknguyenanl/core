@@ -81,7 +81,8 @@ fd = 'latest'
 tree-sitter = 'latest'
 glab = 'latest'
 starship = 'latest'
-deno = "latest"
+deno = 'latest'
+zig = 'latest'
 
 'npm:degit' = 'latest'
 'npm:joplin' = 'latest'
@@ -92,7 +93,7 @@ alias = 'c'
 run = 'rm -rf .cache'
 hide = false
 [tasks.update]
-depends = ["cleancache"]
+depends = ['cleancache']
 alias = 'u'
 run = 'mise up'
 hide = false
