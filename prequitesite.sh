@@ -55,6 +55,7 @@ gitui = 'latest'
 github-cli = '2.52.0'
 lua = 'latest'
 luajit = 'latest'
+lazygit = 'latest'
 
 dotnet = 'latest'
 go = 'latest'
