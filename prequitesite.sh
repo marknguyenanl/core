@@ -45,7 +45,7 @@ sudo apt update
 sudo apt install -y mise
 
 miseSetting="[tools]
-node = '18.18.0'
+node = '18.20.3'
 bun = 'latest'
 yarn = 'latest'
 
@@ -87,7 +87,6 @@ zig = 'latest'
 
 'npm:degit' = 'latest'
 'npm:joplin' = 'latest'
-'cargo:clock-cli' = 'latest'
 
 [tasks.cleancache]
 alias = 'c'

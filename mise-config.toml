@@ -39,7 +39,6 @@ zig = 'latest'
 
 'npm:degit' = 'latest'
 'npm:joplin' = 'latest'
-'cargo:clock-cli' = 'latest'
 python = '3.12.6'
 node = '18.20.3'
 
