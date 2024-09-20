@@ -9,6 +9,7 @@ gitui = 'latest'
 github-cli = '2.52.0'
 lua = 'latest'
 luajit = 'latest'
+lazygit = 'latest'
 
 dotnet = 'latest'
 go = 'latest'
@@ -41,6 +42,9 @@ zig = 'latest'
 'npm:degit' = 'latest'
 'npm:joplin' = 'latest'
 'cargo:clock-cli' = 'latest'
+zig = "0.13.0"
+python = "3.12.6"
+node = "18.20.3"
 
 [tasks.cleancache]
 alias = 'c'

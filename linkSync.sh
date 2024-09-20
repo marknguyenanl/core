@@ -32,6 +32,7 @@ run_scan() {
 
 if [ ! -d "$HOME/mydotfile" ]; then
   su -c "git clone https://github.com/marknguyenanl/mydotfile $HOME/mydotfile" $user
+  chmod -R 777 mydotfile/**/*.sh
 fi
 
 mkdir -p "$HOME/.config/fish"
