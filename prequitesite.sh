@@ -44,70 +44,71 @@ echo "deb [signed-by=/etc/apt/keyrings/mise-archive-keyring.gpg arch=amd64] http
 sudo apt update
 sudo apt install -y mise
 
-miseSetting="[tools]
-node = '18.20.3'
-bun = 'latest'
-yarn = 'latest'
+miseSetting='[tools]
+node = "18.20.3"
+bun = "latest"
+yarn = "latest"
 
-neovim = 'ref:master'
-git = 'latest'
-gitui = 'latest'
-github-cli = '2.52.0'
-lua = 'latest'
-luajit = 'latest'
-lazygit = 'latest'
+neovim = "ref:master"
+git = "latest"
+gitui = "latest"
+github-cli = "2.52.0"
+lua = "latest"
+luajit = "latest"
+lazygit = "latest"
 
-dotnet = 'latest'
-go = 'latest'
-python = '3.12.4'
-rust = 'latest'
-ruby = '3.1.0'
+dotnet = "latest"
+go = "latest"
+python = "3.12.4"
+rust = "latest"
+ruby = "3.1.0"
 
-dockle = 'latest'
-helm = 'latest'
-kubectl = '1.28.10'
-kubie = 'latest'
-kustomize = ' latest'
-kubelogin = 'latest'
-kops = 'latest'
-kind = 'latest'
-minikube = 'latest'
-argo = 'latest'
-argocd = '2.11.7'
-azure-cli = 'latest'
-terraform = 'latest'
+dockle = "latest"
+helm = "latest"
+kubectl = "1.28.10"
+kubie = "latest"
+kustomize = " latest"
+kubelogin = "latest"
+kops = "latest"
+kind = "latest"
+minikube = "latest"
+argo = "latest"
+argocd = "2.11.7"
+azure-cli = "latest"
+terraform = "latest"
 
-ripgrep = 'latest'
-fd = 'latest'
-tree-sitter = 'latest'
-glab = 'latest'
-starship = 'latest'
-deno = 'latest'
-zig = 'latest'
+ripgrep = "latest"
+fd = "latest"
+tree-sitter = "latest"
+glab = "latest"
+starship = "latest"
+deno = "latest"
+zig = "latest"
 
-'npm:degit' = 'latest'
-'npm:joplin' = 'latest'
+"npm:degit" = "latest"
+"npm:joplin" = "latest"
+"npm:@ast-grep/cli" = "latest"
 
 [tasks.cleancache]
-alias = 'c'
-run = 'rm -rf .cache'
+alias = "c"
+run = "rm -rf .cache"
 hide = false
 [tasks.update]
-depends = ['cleancache']
-alias = 'u'
-run = 'mise up'
+depends = ["cleancache"]
+alias = "u"
+run = "mise up"
 hide = false
 
 # [env]
-# _.python.venv = '~/venv'
-# _.python.venv = { path = '{{env.HOME}}/venv', create = true }
+# _.python.venv = "~/venv"
+# _.python.venv = { path = "{{env.HOME}}/venv", create = true }
 
 [settings]
 legacy_version_file = false
 always_keep_download = false
 always_keep_install = false
-plugin_autoupdate_last_check_duration = '1 week'
-trusted_config_paths = ['~/.config/mise/config.toml']
+plugin_autoupdate_last_check_duration = "1 week"
+trusted_config_paths = ["~/.config/mise/config.toml"]
 verbose = false
 asdf_compat = true
 http_timeout = 120
@@ -115,12 +116,12 @@ jobs = 20
 raw = false
 yes = true
 not_found_auto_install = true
-task_output = 'prefix'
+task_output = "prefix"
 paranoid = false
 disable_default_shorthands = false
 experimental = true
-status = { missing_tools = 'if_other_versions_installed', show_env = false, show_tools = false }
-python_compile = false"
+status = { missing_tools = "if_other_versions_installed", show_env = false, show_tools = false }
+python_compile = false'
 
 mkdir -p $HOME/.config/mise/
 echo "$miseSetting" >$HOME/.config/mise/config.toml
