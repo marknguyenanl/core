@@ -35,6 +35,7 @@ sudo apt install \
   clang \
   gcc \
   obs-studio \
+  sshpass \
   rsync -y
 
 apt update -y && apt install -y gpg sudo wget curl
