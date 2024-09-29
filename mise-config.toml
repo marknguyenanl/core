@@ -9,6 +9,7 @@ github-cli = '2.52.0'
 lua = 'latest'
 luajit = 'latest'
 lazygit = 'latest'
+flutter = 'latest'
 
 dotnet = 'latest'
 go = 'latest'
