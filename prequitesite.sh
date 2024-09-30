@@ -89,6 +89,8 @@ zig = "latest"
 "npm:degit" = "latest"
 "npm:joplin" = "latest"
 "npm:@ast-grep/cli" = "latest"
+"cargo:neovide/neovide" = "branch:main"
+cargo-binstall = "1.10.6"
 
 [tasks.cleancache]
 alias = "c"

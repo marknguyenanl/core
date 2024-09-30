@@ -43,7 +43,9 @@ zig = 'latest'
 
 python = '3.12.6'
 node = '18.20.3'
-"npm:@ast-grep/cli" = "0.27.1"
+'npm:@ast-grep/cli' = '0.27.1'
+'cargo:neovide/neovide' = 'branch:main'
+cargo-binstall = '1.10.6'
 
 [tasks.cleancache]
 alias = 'c'
